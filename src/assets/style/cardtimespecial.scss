@@ -1,0 +1,24 @@
+@import "./app.scss";
+
+.cardTimeS{
+    height: 100%;
+    width: 100%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: $color-primary;
+    &__number{
+        color: $color-secondary;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    &__item{
+        color: #fff;
+        font-size:20px
+    }
+    &__desc{
+        font-size: 16px;
+        font-weight: bold;
+    }
+}

@@ -9,3 +9,12 @@ $color-border: #E34B5B;
     padding: 0;
     box-sizing: border-box;
 }
+
+@mixin contenedor {
+    width: 100%;
+    min-width: 320px;
+    display: grid;
+    grid-template-columns: minmax(10px, 10%) minmax(300px, 80%) minmax(10px, 10%);
+    justify-items: center;
+    align-items: center;
+}
