@@ -1,0 +1,82 @@
+@import "../app.scss";
+
+.title{
+    width: 100%;
+    height: 70vh;
+    background-color: #FEFEFE;
+    display: grid;
+    grid-template-columns: minmax(10px, 10%) minmax(300px, 80%) minmax(10px, 10%);
+    grid-template-rows: repeat(2, 30vh);
+    justify-items: center;
+    align-items: center;
+    &__img{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        &-item{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 7px solid $color-border;
+            background-color: black;
+        }
+    }
+    &__text{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 45% 30%;
+        justify-items: start;
+        align-items: center;
+        &-sec{
+            color: $color-auxiliary;
+            font-size: 20px;
+            height: auto;
+        }
+        &-main{
+            color: $color-secondary;
+            font-size: 38px;
+        }
+        &-dec{
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .title{
+        display: grid;
+        grid-template-columns: minmax(10%, 20%) minmax(35%, 45%) minmax(25%, 35%) minmax(10%, 20%);
+        grid-template-rows: 100%;
+        &__text{
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 20% 15% 25% 20% 20%;
+            &-sec{
+                grid-row: 2 / 3;
+                font-size: 30px;
+            }
+            &-main{
+                grid-row: 3 / 4;
+                font-size: 60px;
+            }
+            &-desc{
+                grid-row: 4 / 5;
+                font-size: 22px;
+            }
+        }
+        &__img{
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            &-item{
+                width: 270px;
+                height: 270px;
+                border: 10px solid $color-border;
+            }
+        }
+    }
+}
