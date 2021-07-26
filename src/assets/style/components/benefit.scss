@@ -1,0 +1,69 @@
+@import "../app.scss";
+
+.benefits{
+    @include contenedor;
+    height: 350px;
+    grid-template-rows: 100%;
+    align-items: start;
+    &__container{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        border-top: 2px solid #EFEFEF;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 60px 250px;
+        align-items: center;
+        &-title{
+            grid-column: 1 /2;
+            grid-row: 1 /2;
+            align-self: center;
+            font-size: 30px;
+            color: $color-secondary;
+        }
+        &-article{
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__article{
+        display: grid;
+        width: 300px;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 80px;
+        place-items: center;
+        &-img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #000;
+            border: 5px solid $color-border;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .benefits{
+        height: 220px;
+        &__container{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 60px 120px;
+            &-article{
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+    .benefits__article{
+        grid-template-columns: 35% 65%;
+        &-img{
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
