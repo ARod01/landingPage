@@ -43,6 +43,7 @@
 
 @media screen and (min-width: 768px) {
     .title{
+        height: 400px;
         display: grid;
         grid-template-columns: minmax(10px, 10%) minmax(35%, 45%) minmax(25%, 35%) minmax(10px, 10%);
         grid-template-rows: 100%;
