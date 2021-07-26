@@ -1,0 +1,99 @@
+@import "../app.scss";
+
+.about{
+    height: auto;
+    @include contenedor;
+    grid-template-rows: 750px;
+    align-items: start;
+    &__container{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        display: grid;
+        grid-auto-columns: 100%;
+        grid-template-rows: 250px 420px;
+        &-schelude{
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            padding-left: 20px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border: none;
+            border-radius: 10px;
+            background-color: $color-primary;
+            &-item1{
+                color: $color-secondary;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            &-item2{
+                color: #fff;
+                font-size: 20px;
+            }
+            &-item3{
+                color: #000;
+                font-size: 20px;
+            }
+        }
+        &-description{
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 12% 49% 39% 10%;
+            align-items: center;
+            text-align: justify;
+            p{
+                font-size: 16px;
+            }
+            h2{
+                color: $color-secondary;
+                font-size: 30px;
+            }
+            button{
+                justify-self: start;
+                height: 100%;
+                width: 110px;
+                border: none;
+                border-radius: 5px;
+                background-color: $color-border;
+                color: #fff;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .about{
+        @include contenedor;
+        grid-template-rows: 420px;
+        &__container{
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            width: 100%;
+            height: 80%;
+            display: grid;
+            grid-template-columns: 35% 65%;
+            grid-template-rows: 100%;
+            place-items: center;
+            &-schedule{
+                grid-column: 1 / 2;
+                grid-row: 1 /2;
+            }
+            &-description{
+                grid-column: 2 / 3;
+                grid-row: 1 /2;
+                padding-left: 30px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                button{
+                    height: 40px;
+                }
+            }
+        }
+    }
+}

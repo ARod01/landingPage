@@ -15,6 +15,5 @@ $color-border: #E34B5B;
     min-width: 320px;
     display: grid;
     grid-template-columns: minmax(10px, 10%) minmax(300px, 80%) minmax(10px, 10%);
-    justify-items: center;
-    align-items: center;
+    place-items: center;
 }

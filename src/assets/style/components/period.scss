@@ -2,8 +2,8 @@
 
 .period{
     @include contenedor;
-    height: auto;
-    grid-auto-rows: 50vh;
+    height: 55vh;
+    grid-template-rows: 50vh;
     &__container{
         grid-column: 2 / 3;
         grid-row: 1 /2;
