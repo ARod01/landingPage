@@ -12,12 +12,12 @@ const Header = () =>{
                 <Navbar.Brand href="#home">SEO Solution</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" className="item">
-                    <Nav className="mr-auto">
+                    <Nav className="mr-auto ">
                         <a className="navbar__item" href=".header">About</a>
                         <a className="navbar__item" href=".header">Tutors</a>
                         <a className="navbar__item" href=".header">Programs</a>
                         <a className="navbar__item" href=".header">Location</a>
-                        <a className="navbar__item" href=".header">Book a place</a>
+                        <button className="navbar__item button">Book a place</button>
                     </Nav>
                 </Navbar.Collapse>
         </Navbar>

@@ -4,9 +4,25 @@
     width: 100%;
     min-width: 320px;
     min-height: 10vh;
-    background-color: #42BCD3;
+    background-color:$color-primary;
 }
 
 .navbar__item{
     color: #fff;
+}
+.button{
+    color: #fff;
+    font-weight: bold;
+    height: 20px;
+    width: 110px;
+    background-color: $color-border;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar__item{
+        margin-left: 30px;
+    }
 }
